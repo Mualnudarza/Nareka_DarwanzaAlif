@@ -24,12 +24,12 @@
         </div>
         
         <nav class="hidden md:flex space-x-8 text-gray-600 font-medium">
-            <a href="#main" class="hover:text-orange-600 transition duration-300">Beranda</a>
+            <a href="#" class="hover:text-orange-600 transition duration-300">Beranda</a>
             <a href="#tentang" class="hover:text-orange-600 transition duration-300">Tentang</a>
-            <a href="#" class="hover:text-orange-600 transition duration-300">Proyek</a>
-            <a href="#" class="hover:text-orange-600 transition duration-300">Pengalaman</a>
-            <a href="#" class="hover:text-orange-600 transition duration-300">Artikel</a>
-            <a href="#" class="hover:text-orange-600 transition duration-300">Kontak</a>
+            <a href="#proyek" class="hover:text-orange-600 transition duration-300">Proyek</a>
+            <a href="#pengalaman" class="hover:text-orange-600 transition duration-300">Pengalaman</a>
+            <a href="#artikel" class="hover:text-orange-600 transition duration-300">Artikel</a>
+            <a href="#kontak" class="hover:text-orange-600 transition duration-300">Kontak</a>
         </nav>
 
         <a href="#" class="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 shadow-md">
@@ -85,56 +85,100 @@
 
     </main>
 
-    <section id="tentang" class="container mx-auto px-4 lg:px-20 py-20 flex flex-col lg:flex-row items-center justify-between">
+<section id="tentang" class="container mx-auto px-4 lg:px-20 py-20 flex flex-col justify-between">
         
-        <div class="w-full lg:w-2/5 flex justify-center lg:justify-start relative mb-10 lg:mb-0">
-            <div class="relative w-[380px] h-[380px] md:w-[520px] md:h-[520px] flex items-center justify-center">
+        <div class="flex flex-col lg:flex-row items-center justify-between mb-20">
+            <div class="w-full lg:w-2/5 flex justify-center lg:justify-start relative mb-10 lg:mb-0">
+                <div class="relative w-[380px] h-[380px] md:w-[520px] md:h-[520px] flex items-center justify-center">
 
-                <div class="relative w-full h-full overflow-hidden rounded-xl">
-                    <img src="assets/darwanza2.gif" alt="Muhammad Alif Nur Darwanza About Photo" >
+                    <div class="relative w-full h-full overflow-hidden rounded-xl">
+                        <img src="assets/darwanza2.gif" alt="Muhammad Alif Nur Darwanza About Photo" >
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full lg:w-3/5 space-y-6 lg:pl-20">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-6">Tentang Saya</h2>
+                
+                <p class="text-lg text-gray-600 leading-relaxed text-justify ">
+                    Saya adalah seorang pengembang multidisiplin dengan pengalaman lebih dari tiga tahun dalam analisis data dan pengelolaan sistem informasi akademik. Memiliki dasar kuat pada pemrograman lintas bidang, mulai dari back-end, front-end, UI/UX, hingga game development, saya terbiasa memecahkan masalah secara fleksibel dan terstruktur. Saat ini saya berfokus pada general programming dan analisis data, dengan minat khusus pada Business Intelligence (BI) dan Sistem Pendukung Keputusan (SPK).
+                </p>
+
+                <div class="flex flex-wrap space-x-4 space-y-4 md:space-y-0 pt-6">
+                    
+                    <div class="flex items-center space-x-4 bg-white p-4 rounded-lg w-full sm:w-auto">
+                        <div class="w-12 h-12 flex items-center justify-center">
+                            <img src="assets/pengalaman.png" alt="icon">
+                        </div>
+                        <div>
+                            <p class="text-xl font-bold text-orange-600">3 Tahun +</p>
+                            <p class="text-sm text-gray-600">Pengalaman</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-4 bg-white p-4 rounded-lg w-full sm:w-auto">
+                        <div class="w-12 h-12 flex items-center justify-center">
+                            <img src="assets/karya.png" alt="icon">
+                        </div>
+                        <div>
+                            <p class="text-xl font-bold text-orange-600">10 +</p>
+                            <p class="text-sm text-gray-600">Karya</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-4 bg-white p-4 rounded-lg w-full sm:w-auto">
+                        <div class="w-12 h-12 flex items-center justify-center">
+                            <img src="assets/proyek.png" alt="icon">
+                        </div>
+                        <div>
+                            <p class="text-xl font-bold text-orange-600">10 +</p>
+                            <p class="text-sm text-gray-600">Proyek</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
 
-        <div class="w-full lg:w-3/5 space-y-6 lg:pl-20">
-            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-6">Tentang Saya</h2>
+
+        <div class="flex flex-col lg:flex-row justify-between items-center items-start pt-10">
             
-            <p class="text-lg text-gray-600 leading-relaxed text-justify ">
-                Saya adalah seorang pengembang multidisiplin dengan pengalaman lebih dari tiga tahun dalam analisis data dan pengelolaan sistem informasi akademik. Memiliki dasar kuat pada pemrograman lintas bidang, mulai dari back-end, front-end, UI/UX, hingga game development, saya terbiasa memecahkan masalah secara fleksibel dan terstruktur. Saat ini saya berfokus pada general programming dan analisis data, dengan minat khusus pada Business Intelligence (BI) dan Sistem Pendukung Keputusan (SPK).
-            </p>
-
-            <div class="flex flex-wrap space-x-4 space-y-4 md:space-y-0 pt-6">
+            <div class="w-full lg:w-3/5 space-y-6 lg:pr-10 mb-10 lg:mb-0">
+                <img src="assets/keahlianku.png" alt="Keahlianku" class="h-8"> 
                 
-                <div class="flex items-center space-x-4 bg-white p-4 rounded-lg w-full sm:w-auto">
-                    <div class="w-12 h-12 flex items-center justify-center">
-                        <img src="assets/pengalaman.png" alt="icon">
-                    </div>
-                    <div>
-                        <p class="text-xl font-bold text-orange-600">3 Tahun +</p>
-                        <p class="text-sm text-gray-600">Pengalaman</p>
-                    </div>
-                </div>
+                <h3 class="text-4xl md:text-5xl font-extrabold text-gray-800 leading-tight">
+                    <span class="text-gray-800">Keahlian yang Saya</span><br>
+                    <span class="text-orange-600">Tawarkan</span>
+                </h3>
+                
+                <p class="text-lg text-gray-600 leading-relaxed text-justify">
+                    Berpengalaman lebih dari tiga tahun sebagai analis data dengan kemampuan kuat di general programming, saya membangun solusi yang presisi, efisien, dan berbasis insight.
+                </p>
 
-                <div class="flex items-center space-x-4 bg-white p-4 rounded-lg w-full sm:w-auto">
-                    <div class="w-12 h-12 flex items-center justify-center">
-                        <img src="assets/karya.png" alt="icon">
-                    </div>
-                    <div>
-                        <p class="text-xl font-bold text-orange-600">10 +</p>
-                        <p class="text-sm text-gray-600">Karya</p>
-                    </div>
-                </div>
+                <a href="#" class="inline-block bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-8 rounded-lg mt-4 transition duration-300 shadow-xl">
+                    Sertifikat Saya
+                </a>
+            </div>
 
-                <div class="flex items-center space-x-4 bg-white p-4 rounded-lg w-full sm:w-auto">
-                    <div class="w-12 h-12 flex items-center justify-center">
-                        <img src="assets/proyek.png" alt="icon">
-                    </div>
-                    <div>
-                        <p class="text-xl font-bold text-orange-600">10 +</p>
-                        <p class="text-sm text-gray-600">Proyek</p>
-                    </div>
+            <div class="w-full lg:w-2/5 grid grid-cols-1 md:grid-cols-2">
+                <div class="flex flex-col space-y-3">
+                    <img src="assets/icon-data-analyst.png" alt="Icon Data Analyst" class="w-10 h-10">
+                    <h4 class="text-xl font-bold text-gray-800">Data Analyst</h4>
+                    <p class="text-lg text-gray-600">Mengolah data menjadi insight yang berguna.</p>
                 </div>
-
+                <div></div>
+                <div></div>
+                <div class="flex flex-col space-y-3">
+                    <img src="assets/icon-bi.png" alt="Icon Business Intelligence" class="w-10 h-10">
+                    <h4 class="text-xl font-bold text-gray-800">Business Intelligence</h4>
+                    <p class="text-lg text-gray-600">Menyusun solusi BI untuk keputusan yang lebih tepat.</p>
+                </div>
+                <div class="flex flex-col space-y-3">
+                    <img src="assets/icon-programming.png" alt="Icon General Programming" class="w-10 h-10">
+                    <h4 class="text-xl font-bold text-gray-800">General Programming</h4>
+                    <p class="text-lg text-gray-600">Membangun sistem yang efektif dan fungsional.</p>
+                </div>
+                <div></div>
             </div>
         </div>
         
