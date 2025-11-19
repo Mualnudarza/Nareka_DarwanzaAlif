@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +7,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Mengaplikasikan font Poppins ke seluruh halaman */
         body {
             font-family: 'Poppins', sans-serif;
         }
+        .active {
+        color: #EA580C !important; 
+        font-weight: 600;
+    }
     </style>
 </head>
 <body class="bg-white min-h-screen">
 
-    <header class="container mx-auto px-4 lg:px-20 py-4 flex justify-between items-center">
+    <header class="container mx-auto px-4 lg:px-20 py-4 flex justify-between items-center sticky top-0 bg-white z-50">
         <div class="flex items-center space-x-2">
             <img src="assets/logo.png" alt="Darwanza Alif Logo" class="h-8"> 
         </div>
         
         <nav class="hidden md:flex space-x-8 text-gray-600 font-medium">
-            <a href="#" class="hover:text-orange-600 transition duration-300">Beranda</a>
-            <a href="#" class="hover:text-orange-600 transition duration-300">Tentang</a>
+            <a href="#main" class="hover:text-orange-600 transition duration-300">Beranda</a>
+            <a href="#tentang" class="hover:text-orange-600 transition duration-300">Tentang</a>
             <a href="#" class="hover:text-orange-600 transition duration-300">Proyek</a>
             <a href="#" class="hover:text-orange-600 transition duration-300">Pengalaman</a>
             <a href="#" class="hover:text-orange-600 transition duration-300">Artikel</a>
@@ -35,7 +38,7 @@
     </header>
 
 
-    <main class="container mx-auto px-4 lg:px-20 py-16 flex flex-col lg:flex-row items-center lg:items-start justify-between">
+    <main id="main" class="container mx-auto px-4 lg:px-20 py-16 flex flex-col lg:flex-row items-center lg:items-start justify-between">
         
         <div class="w-full lg:w-3/5 space-y-6 order-2 lg:order-1 mt-12 lg:mt-0">
             <p class="text-xl text-gray-700">Halo aku</p>
@@ -59,7 +62,7 @@
             <div class="relative w-[380px] h-[380px] md:w-[520px] md:h-[520px] flex items-center justify-center">
 
                 <div>
-                    <img src="assets/darwanza1.gif" alt="Muhammad Alif Nur Darwanza Photo" class="w-full h-full object-cover">
+                    <img src="assets/darwanza1.gif" alt="Muhammad Alif Nur Darwanza Photo">
                 </div>
 
                 <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-5 flex space-x-4 z-20">
@@ -81,6 +84,61 @@
         </div>
 
     </main>
+
+    <section id="tentang" class="container mx-auto px-4 lg:px-20 py-20 flex flex-col lg:flex-row items-center justify-between">
+        
+        <div class="w-full lg:w-2/5 flex justify-center lg:justify-start relative mb-10 lg:mb-0">
+            <div class="relative w-[380px] h-[380px] md:w-[520px] md:h-[520px] flex items-center justify-center">
+
+                <div class="relative w-full h-full overflow-hidden rounded-xl">
+                    <img src="assets/darwanza2.gif" alt="Muhammad Alif Nur Darwanza About Photo" >
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full lg:w-3/5 space-y-6 lg:pl-20">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-6">Tentang Saya</h2>
+            
+            <p class="text-lg text-gray-600 leading-relaxed text-justify max-w-xl">
+                Saya adalah seorang pengembang multidisiplin dengan pengalaman lebih dari tiga tahun dalam analisis data dan pengelolaan sistem informasi akademik. Memiliki dasar kuat pada pemrograman lintas bidang, mulai dari back-end, front-end, UI/UX, hingga game development, saya terbiasa memecahkan masalah secara fleksibel dan terstruktur. Saat ini saya berfokus pada general programming dan analisis data, dengan minat khusus pada Business Intelligence (BI) dan Sistem Pendukung Keputusan (SPK).
+            </p>
+
+            <div class="flex flex-wrap space-x-4 space-y-4 md:space-y-0 pt-6">
+                
+                <div class="flex items-center space-x-4 bg-white p-4 rounded-lg w-full sm:w-auto">
+                    <div class="w-12 h-12 flex items-center justify-center">
+                        <img src="assets/pengalaman.png" alt="icon">
+                    </div>
+                    <div>
+                        <p class="text-xl font-bold text-orange-600">3 Tahun +</p>
+                        <p class="text-sm text-gray-600">Pengalaman</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4 bg-white p-4 rounded-lg w-full sm:w-auto">
+                    <div class="w-12 h-12 flex items-center justify-center">
+                        <img src="assets/karya.png" alt="icon">
+                    </div>
+                    <div>
+                        <p class="text-xl font-bold text-orange-600">10 +</p>
+                        <p class="text-sm text-gray-600">Karya</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4 bg-white p-4 rounded-lg w-full sm:w-auto">
+                    <div class="w-12 h-12 flex items-center justify-center">
+                        <img src="assets/proyek.png" alt="icon">
+                    </div>
+                    <div>
+                        <p class="text-xl font-bold text-orange-600">10 +</p>
+                        <p class="text-sm text-gray-600">Proyek</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+    </section>
     
 </body>
 </html>
